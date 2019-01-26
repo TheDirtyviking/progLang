@@ -69,6 +69,13 @@ main:- tests, testNepotism.
 
 :- op(902,xfx,  if).
 :- op(901,xfx,  then).
+:- op(1, fy, rule).
+:- op(850, xfy, and).
+:- op(860, xfy, or).
+:- op(849, fx, not).
+:- op(750, xfy, had).
+:- op(740, xfy, in).
+:- op(750, xfy, has).
 
 rule1 if a then b.
 
