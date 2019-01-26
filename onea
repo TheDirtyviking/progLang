@@ -194,7 +194,7 @@ had(not X)        :- had(\+ X).
 b4(X had Y,Fs)    :- b4(X,Fs), b4(Y,Fs).
 b4(X =  Y, Fs)    :- member(X=Y,Fs).
 b4(X >= Y, Fs)    :- member(X=A,Fs), A >= Y.
-b4(X <= Y, Fs)    :- member(X=A,Fs), A <= Y.
+b4(X =< Y, Fs)    :- member(X=A,Fs), A =< Y.
 b4(X <  Y, Fs)    :- member(X=A,Fs), A < Y.
 b4(X >  Y, Fs)    :- member(X=A,Fs), A > Y.
 b4(X in Y, Fs)    :- member(X=Z,Fs), member(Z,Y).
